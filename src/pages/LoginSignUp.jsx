@@ -90,11 +90,11 @@ export default function Login(){
 
     useEffect(()=>{
       if(error){
-        // toast.error(error); 
+        toast.error(error); 
         dispatch(clearError());
       }
       if(success){
-        // toast.success("User Login Successfully");
+        toast.success("User Login Successfully");
         dispatch( clearSuccess());
       }
     
