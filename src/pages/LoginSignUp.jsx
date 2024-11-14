@@ -84,12 +84,6 @@ export default function Login(){
     }
 
     //if loggedin redirect to home page
-    useEffect(()=>{
-      if(isLogin){
-        window.location.reload();
-      }
-    },[isLogin]);
-    
     if(isLogin){
       navigate("/");
     }
