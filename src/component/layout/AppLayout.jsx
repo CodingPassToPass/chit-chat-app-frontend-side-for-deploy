@@ -107,9 +107,9 @@ const AppLayout = () => (WrappedComponent) =>{
         },[ isError]);
 
         useEffect(()=>{
-            if(user._id){
+            if(user?._id){
                 refetch();
-                
+
             }
         },[user]);
 
