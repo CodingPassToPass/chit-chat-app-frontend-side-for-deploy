@@ -51,6 +51,7 @@ export default function DeleteChatMenu( { anchorEl} ){
                   }
                   else{
                       toast.success("Chat Deleted Successfully",{ id: toastId});
+                      navigate("/");
                   }
             }
             else{
